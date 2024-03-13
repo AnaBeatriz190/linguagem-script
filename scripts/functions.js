@@ -6,16 +6,20 @@ function login(){
 
     const emailCorreto = "aninha@gmail.com"
     const senhaCorreta = "senha"
+    
+    var email = document.getElementById('email').value;
+    var senha = document.getElementById('pwd').value;
 
     if(email == emailCorreto){
 
         if(senha == senhaCorreta){
             alert("E-mail e senha corretos")
+            window.location.href = '../index.html'
         } else {
             alert('Senha incorrreta')
         }
 
-    } else {
+    }else {
         alert('E-mail incorreto')
     }
 
